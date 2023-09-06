@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-g" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>animation demo</title>
+ </head>
+ <body>
+  <div id="box">
+   <div id="container">
+   </div>
+  </div>
+ </body>
+</html>
+<style type="text/css">
+ #container{
+ height:170px;
+ width:150px;
+ background:yellow;
+ position:relative;
+ animation-name:myAnimation;
+ animation-duration:5s;
+ animation-iteration-count:4;
+}
+body{
+ background-color:#333333;
+ animation-name:myAnime;
+ animation-duration:5s;
+ animation-iteration-count:4;
+ 
+}
+@keyframes myAnime{
+ 0% {background-color:#333333;}
+ 25% {background-color:#666666;}
+ 50% {background-color:#999999;}
+ 75% {background-color:#cccccc;}
+ 100% {background-color:#ffffff;}
+}
+@keyframes myAnimation {
+  0% {background-color:yellow; left:0px; top:0px; border-radius: 0%;}
+  25% {background-color:green; left:280px; top:0px; border-radius:50% 0% 0% 0%;}
+  50% {background-color:blue; left:280px; top:300px; border-radius:50% 50% 0% 0%;}
+  75% {background-color:red; left:0px; top:300px; border-radius:50% 50% 50% 0%;}
+  100% {background-color:indigo; left:140px; top:150px; border-radius:50% ;}
+}
+#box{
+ height:470px;
+ width:430px;
+ border-style:solid;
+ border-color:yellow;
+ animation-name:myAnime2;
+ animation-iteration-count:4;
+ animation-duration:5s;
+}
+@keyframes myAnime2{
+ 0% {border-color:yellow; box-shadow: 4px 4px 4px #ffffff, 3px 3px 3px #ffffff;}
+ 25% {border-color:green; box-shadow:4px 4px 4px #cccccc, 3px 3px 3px #cccccc;}
+ 50% {border-color:blue; box-shadow: 4px 4px 4px #999999, 3px 3px 3px #999999;}
+ 75% {border-color:red; box-shadow:4px 4px 4px #666666, 3px 3px 3px #666666;}
+ 100% {border-color:indigo; box-shadow: 4px 4px 4px #333333, 3px 3px 3px #333333;}
+}
+</style>
